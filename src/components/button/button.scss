@@ -1,0 +1,45 @@
+@import "../layout/colors.module";
+@import "../layout/variables.module";
+
+.button {
+  @include default_font(13px);
+  letter-spacing: 0.25px;
+  background: $dark-background-color;
+  border: 1px solid rgba(38, 50, 56, 0.16);
+
+  color: $dark-secondary-color;
+  padding: 5px 10px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+
+  &--default {
+    max-height: 24px;
+    border-radius: 12px;
+    border: 0;
+    min-width: 80px;
+    line-height: 14px;
+
+    &[data-toggle=true] {
+      color: white;
+      background: $dark-primary-color;
+    }
+  }
+
+  &--form {
+    border: 1px solid $dark-primary-color;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.16)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.1));
+    border-radius: 4px;
+    max-height: 32px;
+    white-space: nowrap;
+    color: $dark-primary-color;
+    line-height: 20px;
+    background: transparent;
+    min-width: 137px;
+
+    &[data-toggle=true] {
+      background: $dark-primary-color;
+      color: $dark-main-color;
+    }
+  }
+}

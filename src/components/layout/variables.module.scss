@@ -1,0 +1,33 @@
+@mixin default_font($font-size) {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: 18px;
+}
+
+@mixin overline_font($font-size) {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: 16px;
+}
+
+$header-height: 88;
+$search-block-height: 83;
+$swap-block-height: 166;
+$swap-block-gap: 17;
+$swap-block-width: 600;
+$swap-block-vertical-padding: 32;
+$app-mobile-side-padding: 10;
+
+:export {
+  HEADER_HEIGHT: $header-height;
+  SEARCH_BLOCK_HEIGHT: $search-block-height;
+  SWAP_BLOCK_HEIGHT: $swap-block-height;
+  SWAP_BLOCK_GAP: $swap-block-gap;
+  SWAP_BLOCK_WIDTH: $swap-block-width;
+  SWAP_BLOCK_VERTICAL_PADDING: $swap-block-vertical-padding;
+  APP_MOBILE_SIDE_PADDING: $app-mobile-side-padding;
+}

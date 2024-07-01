@@ -1,0 +1,19 @@
+@import "../layout/colors.module";
+
+
+.list_wrapper {
+  padding-top: 32px;
+
+  .list {
+    &::-webkit-scrollbar {
+      width: 7px;
+      border-radius: 2px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(110, 66, 202, 0.5);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $dark-primary-color;
+    }
+  }
+}

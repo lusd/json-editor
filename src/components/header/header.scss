@@ -1,0 +1,38 @@
+@import "../layout/colors.module";
+@import "../layout/variables.module";
+
+.header {
+  height: $header-height + px;
+  width: 100%;
+  padding: 0 53px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  .header_username {
+    @include default_font(15px);
+    text-align: right;
+    color: $dark-secondary-color;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.44px;
+    opacity: 0.6;
+  }
+
+  .header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .header_link {
+    display: flex;
+    align-content: center;
+  }
+
+  @media(max-width: 600px) {
+    padding: 0 20px;
+  }
+}
+
+

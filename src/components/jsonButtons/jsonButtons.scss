@@ -1,0 +1,29 @@
+@import "../layout/colors.module";
+@import "../layout/variables.module";
+
+.json_input {
+  color: white;
+  outline: none;
+  border: 1px solid $dark-primary-color;
+  background: transparent;
+  @include default_font(12px);
+  cursor: pointer;
+
+  &::file-selector-button {
+    @include default_font(15px);
+    color: $dark-primary-color;
+    padding: 0.5em;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    white-space: nowrap;
+    line-height: 20px;
+    cursor: pointer;
+  }
+}
+
+.json_error {
+  display: block;
+  color: red;
+  @include default_font(13px);
+}
