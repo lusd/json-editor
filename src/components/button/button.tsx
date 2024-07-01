@@ -4,9 +4,7 @@ import './button.scss';
 interface IButtonProps {
   name: string;
   appearance: 'default' | 'form';
-  // eslint-disable-next-line react/require-default-props
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
-  // eslint-disable-next-line react/require-default-props
   toggle?: boolean;
 }
 
