@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/json-editor/static/css/main.aa3b7416.css",
+    "main.js": "/json-editor/static/js/main.77b8251c.js",
+    "static/media/lens.svg": "/json-editor/static/media/lens.d7ad8a37747cd82350a4.svg",
+    "index.html": "/json-editor/index.html",
+    "main.aa3b7416.css.map": "/json-editor/static/css/main.aa3b7416.css.map",
+    "main.77b8251c.js.map": "/json-editor/static/js/main.77b8251c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa3b7416.css",
+    "static/js/main.77b8251c.js"
+  ]
+}
