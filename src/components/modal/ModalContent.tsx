@@ -18,11 +18,8 @@ export function ModalContent({ jsonIndex }:IModalContent) {
 
 	const handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => (name: string) => {
 		// if date - convert to iso string
-		console.log('name', name);
-		console.log('event.target.value', event.target.value);
 		if (event.target.getAttribute('type') === 'date') {
 			const day = dayjs(event.target.value).toJSON();
-			console.log(day);
 			dispatch(setItemByIndex({ key: name, value: day, index: jsonIndex }));
 			return;
 		}
@@ -155,7 +152,7 @@ export function ModalContent({ jsonIndex }:IModalContent) {
 			}
 			return null;
 		});
-	}, [myModalData, handleChange, validateDateAndReturnDayjs, jsonData, jsonIndex]);
+	}, [myModalData, handleChange, validateDateAndReturnDayjs]);
 
 	return (
 		<div className="modal_details">
