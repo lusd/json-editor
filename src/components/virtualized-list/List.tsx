@@ -14,7 +14,7 @@ interface IListProps {
   items: IJSONModel[];
 }
 
-const itemSize = Number(cssVars.SWAP_BLOCK_HEIGHT) + Number(cssVars.SWAP_BLOCK_GAP);
+const itemSize = Number(cssVars.JSON_BLOCK_HEIGHT) + Number(cssVars.JSON_BLOCK_GAP);
 
 export const List = React.memo(({ items }: IListProps) => {
 	const [availableHeight, setAvailableHeight] = useState(window.innerHeight);
@@ -40,11 +40,11 @@ export const List = React.memo(({ items }: IListProps) => {
 		availableHeight
       - cssVars.HEADER_HEIGHT
       - cssVars.SEARCH_BLOCK_HEIGHT
-      - cssVars.SWAP_BLOCK_VERTICAL_PADDING
+      - cssVars.JSON_BLOCK_VERTICAL_PADDING
 	), [availableHeight]);
 
 	const fixedListWidth = useMemo(() => (
-		availableWidth >= 600 ? 600 : availableWidth - Number(cssVars.APP_MOBILE_SIDE_PADDING) * 2
+		availableWidth >= cssVars.JSON_BLOCK_WIDTH ? cssVars.JSON_BLOCK_WIDTH : availableWidth - Number(cssVars.APP_MOBILE_SIDE_PADDING) * 2
 	), [availableWidth]);
 
 	const filteredList = useMemo(() => items.filter(({ name, email }) => {

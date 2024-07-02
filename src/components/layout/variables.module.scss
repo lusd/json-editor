@@ -16,18 +16,18 @@
 
 $header-height: 88;
 $search-block-height: 83;
-$swap-block-height: 166;
-$swap-block-gap: 17;
-$swap-block-width: 600;
-$swap-block-vertical-padding: 32;
+$json-block-height: 166;
+$json-block-gap: 17;
+$json-block-width: 800;
+$json-block-vertical-padding: 32;
 $app-mobile-side-padding: 10;
 
 :export {
   HEADER_HEIGHT: $header-height;
   SEARCH_BLOCK_HEIGHT: $search-block-height;
-  SWAP_BLOCK_HEIGHT: $swap-block-height;
-  SWAP_BLOCK_GAP: $swap-block-gap;
-  SWAP_BLOCK_WIDTH: $swap-block-width;
-  SWAP_BLOCK_VERTICAL_PADDING: $swap-block-vertical-padding;
+  JSON_BLOCK_HEIGHT: $json-block-height;
+  JSON_BLOCK_GAP: $json-block-gap;
+  JSON_BLOCK_WIDTH: $json-block-width;
+  JSON_BLOCK_VERTICAL_PADDING: $json-block-vertical-padding;
   APP_MOBILE_SIDE_PADDING: $app-mobile-side-padding;
 }
